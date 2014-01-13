@@ -297,7 +297,6 @@ set_light_touchkeys(struct light_device_t* dev,
     pthread_mutex_lock(&g_lock);
     write_int(BUTTONS_FILE, brightness);
     pthread_mutex_unlock(&g_lock);
-    
     return err;
 }
 

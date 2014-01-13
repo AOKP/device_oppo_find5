@@ -28,6 +28,9 @@ DEVICE_PACKAGE_OVERLAYS := device/oppo/find5/overlay
 PRODUCT_AAPT_CONFIG := normal hdpi xhdpi xxhdpi
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
+PRODUCT_PACKAGES := \
+	lights.msm8960
+
 PRODUCT_PACKAGES += \
     charger_res_images \
     charger
@@ -61,8 +64,9 @@ PRODUCT_COPY_FILES += \
 	device/oppo/find5/configs/fstab.find5:root/fstab.find5 \
 	device/oppo/find5/configs/ueventd.find5.rc:root/ueventd.find5.rc \
 	device/oppo/find5/configs/media_profiles.xml:system/etc/media_profiles.xml \
-	device/oppo/find5/configs/media_codecs.xml:system/etc/media_codecs.xml
-
+	device/oppo/find5/configs/media_codecs.xml:system/etc/media_codecs.xml \
+	device/oppo/find5/configs/audio_effects.conf:system/etc/audio_effects.conf
+	
 PRODUCT_COPY_FILES += \
 	device/oppo/find5/init.qcom.post_fs.sh:system/etc/init.qcom.post_fs.sh \
 	device/oppo/find5/init.qcom.mdm_links.sh:system/etc/init.qcom.mdm_links.sh \
@@ -142,9 +146,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
 	persist.audio.fluence.mode=endfire \
 	persist.audio.lowlatency.rec=false \
 	af.resampler.quality=4 \
-	lpa.decode=false \
+	lpa.decode=true \
 	tunnel.decode=false \
-	tunnel.audiovideo.decode=true
+	tunnel.audiovideo.decode=false
 
 # Debugging
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -167,8 +171,8 @@ PRODUCT_PROPERTY_OVERRIDES += persist.hwc.mdpcomp.enable=true
 
 # Cell Broadcasts
 PRODUCT_PROPERTY_OVERRIDES += \
-	ro.cellbroadcast.emergencyids=0-65534 
-        
+	ro.cellbroadcast.emergencyids=0-65534
+
 PRODUCT_CHARACTERISTICS := nosdcard
 
 PRODUCT_TAGS += dalvik.gc.type-precise
@@ -187,9 +191,9 @@ PRODUCT_PACKAGES += \
 	hwcomposer.msm8960 \
 	gralloc.msm8960 \
 	copybit.msm8960 \
+	memtrack.msm8960 \
 	lights.find5 \
-	camera-wrapper.msm8960 \
-	power.find5
+	camera-wrapper.msm8960
 
 PRODUCT_PACKAGES += \
 	alsa.msm8960 \
@@ -215,13 +219,12 @@ PRODUCT_PACKAGES += \
 	libOmxVdec \
 	libOmxVenc \
 	libOmxCore \
-    	libOmxAacEnc \
-   	libOmxAmrEnc \
-  	libOmxEvrcEnc \
-  	libOmxQcelp13Enc \
+    libOmxAacEnc \
+    libOmxAmrEnc \
+    libOmxEvrcEnc \
+    libOmxQcelp13Enc \
 	libstagefrighthw \
-	libc2dcolorconvert \
-	libdashplayer
+	libc2dcolorconvert
 
 PRODUCT_PACKAGES += \
 	bdAddrLoader \

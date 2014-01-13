@@ -42,7 +42,7 @@ BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.hardware=find5 lpj
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x02000000
 
 # Kernel
-TARGET_KERNEL_CONFIG := aokp_find5_defconfig
+TARGET_KERNEL_CONFIG := cyanogenmod_find5_defconfig
 
 # Bluetooth
 BOARD_HAVE_BLUETOOTH := true
@@ -72,7 +72,7 @@ WIFI_DRIVER_FW_PATH_AP           := "ap"
 
 BOARD_EGL_CFG := device/oppo/find5/configs/egl.cfg
 
-# global
+# Global
 BOARD_USES_QCOM_HARDWARE := true
 TARGET_USES_QCOM_BSP := true
 COMMON_GLOBAL_CFLAGS += -DQCOM_HARDWARE -DQCOM_BSP
@@ -113,22 +113,23 @@ BOARD_HAVE_NEW_QC_GPS := true
 #TARGET_NO_RPC := true
 
 # Camera
-COMMON_GLOBAL_CFLAGS += -DDISABLE_HW_ID_MATCH_CHECK -DQCOM_BSP_CAMERA_ABI_HACK
+COMMON_GLOBAL_CFLAGS += -DDISABLE_HW_ID_MATCH_CHECK -DQCOM_BSP_CAMERA_ABI_HACK -DNEEDS_VECTORIMPL_SYMBOLS
 USE_DEVICE_SPECIFIC_CAMERA := true
+
+# Sensors
+SENSORS_NEED_SETRATE_ON_ENABLE := true
 
 TARGET_RELEASETOOLS_EXTENSIONS := device/oppo/find5
 
 BOARD_CHARGER_ENABLE_SUSPEND := true
 
 # Audio/media
-BOARD_USES_ALSA_AUDIO:= true
 TARGET_QCOM_AUDIO_VARIANT := caf
-BOARD_HAVE_LOW_LATENCY_AUDIO := true
 TARGET_QCOM_MEDIA_VARIANT := caf
+TARGET_ENABLE_QC_AV_ENHANCEMENTS := true
+BOARD_USES_ALSA_AUDIO := true
+BOARD_USES_LEGACY_ALSA_AUDIO := true
 BOARD_USES_FLUENCE_INCALL := true
-# maxwen: this is actually only needed because
-# of a bug in audio-caf when BOARD_USES_FLUENCE_INCALL := true
-# to enter the default else path
 BOARD_USES_SEPERATED_AUDIO_INPUT := true
 BOARD_USES_SEPERATED_VOICE_SPEAKER := true
 
@@ -137,4 +138,27 @@ BOARD_USES_SEPERATED_VOICE_SPEAKER := true
 BOARD_HAS_NO_SELECT_BUTTON := true
 
 # dont build docs
-DISABLE_DROIDDOC := true 
+DISABLE_DROIDDOC := true
+
+# SELinux
+BOARD_SEPOLICY_DIRS := \
+        device/oppo/find5/sepolicy
+
+BOARD_SEPOLICY_UNION := \
+       app.te \
+       bluetooth.te \
+       device.te \
+       domain.te \
+       drmserver.te \
+       file.te \
+       file_contexts \
+       hci_init.te \
+       init_shell.te \
+       keystore.te \
+       mediaserver.te \
+       kickstart.te \
+       rild.te \
+       surfaceflinger.te \
+       system.te \
+       ueventd.te \
+       wpa.te

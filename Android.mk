@@ -27,7 +27,6 @@ ifneq ($(filter find5,$(TARGET_DEVICE)),)
 
 LOCAL_PATH := $(call my-dir)
 
-
 include $(call all-makefiles-under,$(LOCAL_PATH))
 
 $(shell mkdir -p $(TARGET_OUT_ETC)/firmware/wcd9310; \
