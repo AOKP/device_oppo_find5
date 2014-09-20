@@ -11,4 +11,13 @@
   <string name="s2w_length_summary_head">Ange antalet knappar som behövs för att svepa över för byta skärm på/av</string>
   <string name="category_s2w_double_tap_title">DubbelKlickaVakna</string>
   <string name="s2w_double_tap_wake_title_head">Aktivera dubbeltryck att vakna</string>
+  <string name="s2w_double_tap_wake_summary_head">Byt telefonens skärm med ett dubbeltryck på de nedre skärm området</string>
+  <string name="s2w_double_tap_duration_title_head">Dubbeltryck varaktighet</string>
+  <string name="s2w_double_tap_duration_summary_head">Minimal längd i ms mellan två skärm tryck för att aktivera skärmen</string>
+  <string name="s2w_double_tap_barrier_title_head">Dubbeltryck område</string>
+  <string name="s2w_double_tap_barrier_summary_head">Definiera aktiva skärmområdet för att acceptera dubbeltryck för att vakna</string>
+  <string name="category_vibrator">Vibrator</string>
+  <string name="vib_strength_title_head">Styrka</string>
+  <string name="vib_strength_summary_head">Definiera styrkan av vibratorn</string>
+  <string name="vib_test">Test</string>
 </resources>

@@ -6,9 +6,16 @@
   <string name="s2w_switch_title_head">Sweep to wake\'i etkinleştir</string>
   <string name="s2w_switch_summary_head">Kapasitif düğmeler üzerinde kaydırma ile telefon ekranını aç/kapat</string>
   <string name="s2w_stroke_title_head">Yön</string>
+  <string name="s2w_stroke_summary_head">\"Yön bağımlı\" ayarını yapmak sadece açmak için soldan sağa, kapatmak için sağdan sola kaydırmaya izin verir</string>
+  <string name="s2w_length_title_head">Minimum Uzunluk</string>
+  <string name="s2w_length_summary_head">Ekranı açıp/kapatmak için üzerinde kaydırılması gereken düğmelerin sayısını ayarlayın</string>
   <string name="category_s2w_double_tap_title">DoubleTap2Wake</string>
   <string name="s2w_double_tap_wake_title_head">Double tap to wake\'i etkinleştir</string>
+  <string name="s2w_double_tap_wake_summary_head">Ekranın alt tarafına çift dokunma ile telefonun ekranını aç</string>
   <string name="s2w_double_tap_duration_title_head">Çift tıklama süresi</string>
+  <string name="s2w_double_tap_duration_summary_head">Ekranı açmak için iki dokunma arasındaki ms cinsinden en az süre</string>
+  <string name="s2w_double_tap_barrier_title_head">Çift dokunma alanı</string>
+  <string name="s2w_double_tap_barrier_summary_head">Çift dokunma ile uyandırmayı onaylamak için aktif ekran alanını belirle</string>
   <string name="category_vibrator">Titreşim</string>
   <string name="vib_strength_title_head">Gücü</string>
   <string name="vib_strength_summary_head">Titreşim gücünü tanımla</string>

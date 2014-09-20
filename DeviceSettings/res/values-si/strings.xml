@@ -6,6 +6,18 @@
   <string name="s2w_switch_title_head">අවදි කිරීමට ඇතිල්ලීම සබල කරන්න</string>
   <string name="s2w_switch_summary_head">ශක්‍යතා බොත්තම් ඉහළින් ඇතිල්ලීමක් මගින් උපාංගයේ තිරය සක්‍රීයවීම/අක්‍රීයවීම සිදුකරන්න</string>
   <string name="s2w_stroke_title_head">දිශාව</string>
+  <string name="s2w_stroke_summary_head">ඇහැරවීම සඳහා වමේ-සිට-දකුණට ඇතිල්ලීමක්ද, වැසීම සඳහා දකුණේ-සිට-වමට ඇතිල්ලීමක්ද පමණක් අනුමත කිරීමට \"දිශාවට පරායත්තයි\" ලෙස සකසන්න</string>
+  <string name="s2w_length_title_head">අවම දිග</string>
+  <string name="s2w_length_summary_head">තිරය සක්‍රීය/අක්‍රීය කිරීම සඳහා ඉහළින් ඇතිල්ලිය යුතු බොත්තම් ගණන සකසන්න</string>
+  <string name="category_s2w_double_tap_title">අවදි කිරීමට දෙවරක් තට්ටු කිරීම</string>
+  <string name="s2w_double_tap_wake_title_head">අවදි කිරීමට දෙවරක් තට්ටු කිරීම සබල කරන්න</string>
+  <string name="s2w_double_tap_wake_summary_head">තිරයේ පහළ පෙදෙසේ දෙවරක් තට්ටු කිරීම මගින් උපාංගයේ තිරය ඇහැරවන්න</string>
+  <string name="s2w_double_tap_duration_title_head">දෙවරක් තට්ටුකිරීමේ කාලමාත්‍රාව</string>
+  <string name="s2w_double_tap_duration_summary_head">තිරය අවදි කිරීමට තට්ටු කිරීම් දෙකක් අතර අවම කාලමාත්‍රාව ms මගින්</string>
+  <string name="s2w_double_tap_barrier_title_head">දෙවරක් තට්ටුකිරීමේ පෙදෙස</string>
+  <string name="s2w_double_tap_barrier_summary_head">දෙවරක් තට්ටු කර අවදි කිරීම පිළිගැනීම සඳහා සක්‍රීය තිර පෙදෙස නියම කරන්න</string>
   <string name="category_vibrator">කම්පකය</string>
   <string name="vib_strength_title_head">ප්‍රබලතාව</string>
+  <string name="vib_strength_summary_head">කම්පකයේ ප්‍රබලතාව නියම කරන්න</string>
+  <string name="vib_test">උරගාන්න</string>
 </resources>
