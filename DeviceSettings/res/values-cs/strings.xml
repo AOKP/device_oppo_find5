@@ -4,7 +4,20 @@
   <string name="app_name">Pokročilá nastavení</string>
   <string name="category_s2w_title">Probuzení potáhnutím</string>
   <string name="s2w_switch_title_head">Zapnout probuzení potáhnutím</string>
+  <string name="s2w_switch_summary_head">Zapnout či vypnout obrazovku telefonu při přejetí tlačítek</string>
   <string name="s2w_stroke_title_head">Směr</string>
+  <string name="s2w_stroke_summary_head">Nastavit na \"závislé na směru\" pro umožnění pouze posunutí zleva doprava pro zapnutí a zprava doleva pro vypnutí</string>
   <string name="s2w_length_title_head">Minimální délka</string>
+  <string name="s2w_length_summary_head">Nastavit počet tlačítek, po kterých musí být přejeto pro zapnutí či vypnutí displeje</string>
+  <string name="category_s2w_double_tap_title">Probuzení dvojitým stiskem</string>
+  <string name="s2w_double_tap_wake_title_head">Zapnout probuzení dvojitým stiskem</string>
+  <string name="s2w_double_tap_wake_summary_head">Probudit telefon dvojitým stiskem na spodní části obrazovky</string>
+  <string name="s2w_double_tap_duration_title_head">Doba trvání dvojitého stisku</string>
+  <string name="s2w_double_tap_duration_summary_head">Minimální doba v ms mezi jednotlivými stisky obrazovky pro zapnutí</string>
+  <string name="s2w_double_tap_barrier_title_head">Oblast dvojitého stisku</string>
+  <string name="s2w_double_tap_barrier_summary_head">Zvolit aktivní část obrazovky pro probuzení dvojitým stiskem</string>
   <string name="category_vibrator">Vibrace</string>
+  <string name="vib_strength_title_head">Síla</string>
+  <string name="vib_strength_summary_head">Zvolit sílu vibrací</string>
+  <string name="vib_test">Testovat</string>
 </resources>
